@@ -18,8 +18,9 @@
 		"server"
 	],
 	"engines": {
-		"node": ">=24.0.0"
+		"node": ">=24.0.0 || ^22.12"
 	},
+	"packageManager": "pnpm@10.12.4",
 	"devDependencies": {
 		"@sveltejs/adapter-node": "^5.2.12",
 		"@sveltejs/kit": "^2.22.0",

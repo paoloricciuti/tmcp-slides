@@ -9,6 +9,7 @@
 /* tailwind */
 @import 'tailwindcss/theme';
 @import 'tailwindcss/utilities';
+@source "../../node_modules/@animotion/core/dist/components/*.svelte";
 
 /* reset */
 *,

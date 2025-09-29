@@ -2,8 +2,6 @@
 	import '../styles/app.css';
 
 	let { children } = $props();
-
-	// import.meta.glob('../slides/**/*.svelte');
 </script>
 
 <svelte:head>

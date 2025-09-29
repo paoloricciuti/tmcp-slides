@@ -53,18 +53,20 @@
 	}
 	.t {
 		stroke-dasharray: 44.5 100;
+		transition-delay: 1s;
 	}
 	.t-line {
 		stroke-dasharray: 100;
 		stroke-dashoffset: 100;
-		transition-delay: 1s;
 	}
 	.complete {
 		.t {
 			stroke-dasharray: 100;
+			transition-delay: 0s;
 		}
 		.t-line {
 			stroke-dashoffset: 0;
+			transition-delay: 1s;
 		}
 	}
 </style>

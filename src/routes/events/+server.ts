@@ -1,5 +1,5 @@
 import { controllers } from '$lib/controllers';
-
+const text_encoder = new TextEncoder();
 export function GET({ url: { searchParams } }) {
 	const session_id = searchParams.get('session');
 	if (!session_id) {
@@ -9,6 +9,7 @@ export function GET({ url: { searchParams } }) {
 		new ReadableStream({
 			start(controller) {
 				controllers.set(session_id, controller);
+				controller.enqueue(text_encoder.encode(`event: init\ndata:\n\n`));
 			},
 			cancel() {
 				controllers.delete(session_id);

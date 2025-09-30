@@ -315,12 +315,3 @@
 		count = 2;
 	}}
 />
-
-<Transition
-	do={() => {
-		count = 4;
-	}}
-	undo={() => {
-		count = 3;
-	}}
-/>

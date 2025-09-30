@@ -5,8 +5,9 @@
 	import Orb from '$lib/orb.svelte';
 	import Presenter from '$lib/presenter.svelte';
 
+	const session_id = $derived(page.url.searchParams.get('session'));
+
 	$effect(() => {
-		const session_id = page.url.searchParams.get('session');
 		if (!session_id) return;
 		const presentation = getPresentation();
 		const event_source = new EventSource(`/events?session=${session_id}`);

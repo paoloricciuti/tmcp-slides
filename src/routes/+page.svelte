@@ -4,8 +4,9 @@
 	import { getAbortSignal } from 'svelte';
 	import Orb from '$lib/orb.svelte';
 	import Presenter from '$lib/presenter.svelte';
+	import { building } from '$app/environment';
 
-	const session_id = $derived(page.url.searchParams.get('session'));
+	const session_id = $derived(building ? null : page.url.searchParams.get('session'));
 
 	$effect(() => {
 		if (!session_id) return;

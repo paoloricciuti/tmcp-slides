@@ -52,7 +52,7 @@
 			stroke-dashoffset 1s;
 	}
 	.t {
-		stroke-dasharray: 44.5 100;
+		stroke-dasharray: 50 100;
 		transition-delay: 1s;
 	}
 	.t-line {

@@ -22,6 +22,7 @@
 
 /* defaults */
 :root {
+	--view-transition-duration: 250ms;
 	color-scheme: dark;
 	--r-background-color: var(--color-zinc-950);
 	--r-main-font: 'Atkinson Hyperlegible', sans-serif;
@@ -79,17 +80,16 @@ html {
 /* all view transitions */
 ::view-transition-group(*) {
 	animation-duration: var(--view-transition-duration);
-	animation-timing-function: var(--ease);
 }
 
 /* entry transition */
 ::view-transition-new(*):only-child {
-	animation: scale-in var(--view-transition-duration) var(--ease);
+	animation: scale-in var(--view-transition-duration);
 }
 
 /* exit transition */
 ::view-transition-old(*):only-child {
-	animation: scale-out var(--view-transition-duration) var(--ease);
+	animation: scale-out var(--view-transition-duration);
 }
 
 @keyframes scale-in {

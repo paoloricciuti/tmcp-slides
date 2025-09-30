@@ -44,6 +44,7 @@
 		"@fontsource-variable/jetbrains-mono": "^5.2.8",
 		"@fontsource/atkinson-hyperlegible": "^5.2.6",
 		"@fontsource/monaspace-neon": "^5.2.5",
+		"@neoconfetti/svelte": "^2.2.2",
 		"@tailwindcss/vite": "^4.1.10",
 		"@tmcp/adapter-valibot": "^0.1.4",
 		"@tmcp/transport-http": "^0.6.0",
